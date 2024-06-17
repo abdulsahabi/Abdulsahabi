@@ -91,5 +91,47 @@
     font-size: 15px;
     margin: 10px 0;
   }
-
+  .loader {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    z-index: 1;
+  }
+  
+  .load-icon {
+    width: 30px;
+    object-fit: cover;
+  }
+  
+  .loader-img {
+    animation: spinner 1s  linear infinite;
+  }
+  
+  .wait {
+    font-family: RobotoBold;
+  }
+  
+  @keyframes spinner {
+    0% {
+      transform: rotate(0deg);
+    } 100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .tag {
+    font-family: RobotoBold;
+    color: black;
+  }
+  
+ #contents {
+   display: none;
+ }
   
